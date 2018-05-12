@@ -77,7 +77,7 @@ class Utils {
   }
 
   //Use Unsplash API to get random pic URL
-  static unsplashRandomPic(query, count, width, height) {
+  static unsplashRandomPics(query, count, width, height) {
     //Gets a random image from unsplash and returns the url.
     // https://api.unsplash.com/photos/random/?count=1&query=dogs&w=200&h=200&orientation=squarish&client_id=e2a508587e823dd93b8031994e2420ed1a539716b750ed67e78b3caa09db950f
     let applicationID = '24544'
@@ -90,6 +90,7 @@ class Utils {
       else
         return query
     }
+
     let imageCount = () => {
       if (count == null)
         return 1
@@ -112,21 +113,37 @@ class Utils {
     let url = `${api}count=${imageCount()}&query=${imageQuery()}&w=${imageWidth()}&h=${imageHeight()}&orientation=squarish&client_id=${accessKey}`
     console.log(url)
 
-
-    // let imageUrl = await fetch(url, {method: 'GET', timeout: 3000}).then(response => {
-    //   if (response.ok)
-    //     return response.json()
-    //   else
-    //     throw new Error('Bad response from server')
-    // }).then(dataJson => {
-    //   console.log('INSIDE FETCH: ' + JSON.stringify(dataJson[0].urls.custom))
-    //   return dataJson[0].urls.custom
-    // })
-    //
-    // console.log('returned from utils' + imageUrl)
-
     return url
 
+  }//End unsplashRandomPic
+
+  //User weatherUnderground API to retrieve weather information
+  static weatherUnderground(cityQuery, stateQuery){
+    // returns an object of weather information URLS from weather underground.
+    cityQuery = cityQuery.toLowerCase()
+    if (cityQuery.includes(' ')){
+      cityQuery = cityQuery.replace(' ', '_')
+    }
+    console.log(cityQuery)
+
+    let api = 'http://api.wunderground.com/api/'
+    let accessKey = '881b368fd778534d'
+    let conditions = `/conditions/q/${stateQuery}/${cityQuery}.json`
+    let animatedRadar = `/animatedradar/animatedsatellite/q/${stateQuery}/${cityQuery}.gif?num=8&delay=25&interval=30`
+    let tenDayForecast = `/forecast10day/q/${stateQuery}/${cityQuery}.json`
+
+    let weatherObject = {
+      conditions : `${api}${accessKey}${conditions}`,
+      radar : `${api}${accessKey}${animatedRadar}`,
+      forecast : `${api}${accessKey}${tenDayForecast}`
+    }
+    return weatherObject
+
+  }//End weatherUnderground
+
+  static googleMaps(){
+    let apiKey = 'AIzaSyBorZD9Cb_bxgM6rZKwlrqTWTNX_O1n2kw'
+    let apiUrl = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBorZD9Cb_bxgM6rZKwlrqTWTNX_O1n2kw&callback=initMap`
   }
 
   //Get average of any amount of arguments
