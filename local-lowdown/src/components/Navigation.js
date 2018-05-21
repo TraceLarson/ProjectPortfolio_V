@@ -5,15 +5,15 @@ import '../style/navigation.css'
 
 const Navigation = () => {
   return (
-      <Navbar>
+      <Navbar >
         <Nav >
-          <NavItem eventKey={1} componentClass={Link} href={'/'} to={'/'}>
+          <NavItem eventKey={1} componentClass={Link} href={'/'} to={'/'} className={'nav-item'} >
             Home
           </NavItem>
-          <NavItem eventKey={1} componentClass={Link} href={'/results'} to={'/results'}>
+          <NavItem eventKey={1} componentClass={Link} href={'/results'} to={'/results'} className={'nav-item'} >
             Results
           </NavItem>
-          <NavItem eventKey={1} componentClass={Link} href={'/about'} to={'/about'}>
+          <NavItem eventKey={1} componentClass={Link} href={'/about'} to={'/about'} className={'nav-item'} >
             About
           </NavItem>
         </Nav>

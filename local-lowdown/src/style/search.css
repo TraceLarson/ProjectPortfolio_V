@@ -2,11 +2,12 @@ label{
     display: none;
 }
 .search-header{
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     align-content: center;
 }
-.search-header input, select{
+.search-header input, .search-header select{
     width: 50%
 }
 .search-header button{
@@ -15,7 +16,6 @@ label{
 }
 @media (min-width: 620px){
     .search-header{
-        border: 1px solid blue;
         display: flex;
         justify-content: center;
         align-content: center;

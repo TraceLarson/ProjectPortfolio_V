@@ -1,0 +1,40 @@
+.results-container{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.google-map{
+    background-color: #00d6b2;
+    height: 300px;
+    grid-column: 1/13;
+    grid-row: 1;
+}
+
+.weather-info{
+    background-color: #a3be8c;
+    height: 400px;
+    grid-column: 1/6;
+    grid-row: 2/3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.unsplash-images{
+    background-color: #0b97c4;
+    height: 400px;
+    grid-column: 6/13;
+    grid-row: 2/3;
+}
+
+.radar-gif{
+    background-color: #5E740B;
+    height: 200px;
+    justify-self: end;
+    /*grid-column: 1/6;*/
+    /*grid-row: 3;*/
+}
