@@ -6,7 +6,7 @@ import '../style/navigation.css'
 const Navigation = () => {
   return (
       <Navbar>
-        <Nav>
+        <Nav >
           <NavItem eventKey={1} componentClass={Link} href={'/'} to={'/'}>
             Home
           </NavItem>

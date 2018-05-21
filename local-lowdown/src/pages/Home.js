@@ -9,7 +9,7 @@ export default class Home extends Component {
     return (
         <div>
           <Header />
-          <Search />
+          <Search thisClass={'search-home'}/>
           <Footer />
         </div>
     )

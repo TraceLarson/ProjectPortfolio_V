@@ -1,0 +1,60 @@
+label{
+    display: none;
+}
+.search-header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.search-header input, select{
+    width: 50%
+}
+.search-header button{
+    height: 25px;
+    padding-top: 0;
+}
+@media (min-width: 620px){
+    .search-header{
+        border: 1px solid blue;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .search-header button{
+        height: 25px;
+        padding-top: 0;
+    }
+}
+
+
+/*----END HEADER---*/
+
+.search-home{
+    min-height: 400px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+@media (min-width: 768px){
+    .search-home fieldset{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .search-home input{
+        width: 300px;
+        align-self: center;
+    }
+    .search-home select{
+        display: inline-block;
+        width: 100px;
+        align-self: center;
+    }
+    .search-home button{
+        justify-self: center;
+        width: 100px;
+    }
+
+
+}
+
+

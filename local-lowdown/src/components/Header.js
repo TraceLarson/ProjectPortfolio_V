@@ -2,14 +2,13 @@ import React from 'react'
 import { Image } from 'react-bootstrap'
 import '../style/header.css'
 
-import Search from '../components/Search'
 
-const ResultsHeader = () => {
+const Header = () => {
   return (
       <div className={'header'}>
-        <Image src={'assets/logo-large.png'} className={'header-logo'}/>
+        <Image src={'assets/logo-large.png'} className={'header-logo'} responsive />
       </div>
   )
 }
 
-export default ResultsHeader
+export default Header

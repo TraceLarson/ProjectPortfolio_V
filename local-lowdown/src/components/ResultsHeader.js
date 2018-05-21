@@ -1,14 +1,15 @@
 import React from 'react'
 import { Image } from 'react-bootstrap'
+import '../style/results-header.css'
 
 import Search from '../components/Search'
-import '../style/results-header.css'
+
 
 const ResultsHeader = () => {
   return (
-      <div className={'header'}>
+      <div className={'results-header'}>
         <Image src={'assets/logo-large.png'} className={'header-logo'}/>
-        <Search />
+        <Search thisClass={'search-header'} />
       </div>
   )
 }
