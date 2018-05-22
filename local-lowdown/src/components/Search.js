@@ -17,18 +17,25 @@ export default class Search extends Component {
     })
   }
 
-  handleSearch = e => {
-    e.preventDefault()
+  handleSearch = () => {
+    // e.preventDefault()
 
     this.state.location.push({
       'city': this.state.city,
       'state' : this.state.state,
+    })
+    this.setState({
+      location: {
+        'city': this.state.city,
+        'state': this.state.state,
+      }
     })
 
     this.updateLocalStorage()
   }
 
   updateLocalStorage() {
+    localStorage.clear()
     const storage = this.state.location
     localStorage.setItem('location', JSON.stringify(storage))
   }
