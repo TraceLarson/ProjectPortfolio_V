@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
-import {Button} from 'react-bootstrap'
+// import {Button} from 'react-bootstrap'
 import '../style/search.css'
 
 export default class Search extends Component {
@@ -109,15 +109,12 @@ export default class Search extends Component {
               <option value="WY">Wyoming</option>
             </select>
           </fieldset>
-          <Button bsStyle={'primary'}
-                  bsSize={'small'}
-                  id="submit-button"
-                  componentClass={Link}
-                  href={'/results'}
-                  to={'/results'}
+          <Link to={'/results'}>
+          <button id="submit-button"
                   onClick={this.handleSearch}>
             <img src={'assets/search-label.png'} alt={'Search'} height={'15'} width={'40'}/>
-          </Button>
+          </button>
+          </Link>
         </form>
     )
   }
@@ -126,3 +123,14 @@ export default class Search extends Component {
 //<Route render={({history}) => (
 
 // history.push('/results')
+
+
+// {/*<Button bsStyle={'primary'}*/}
+// {/*bsSize={'small'}*/}
+// {/*id="submit-button"*/}
+// {/*componentClass={Link}*/}
+// {/*href={'/results'}*/}
+// {/*to={'/results'}*/}
+// {/*onClick={this.handleSearch}>*/}
+// {/*<img src={'assets/search-label.png'} alt={'Search'} height={'15'} width={'40'}/>*/}
+// {/*</Button>*/}

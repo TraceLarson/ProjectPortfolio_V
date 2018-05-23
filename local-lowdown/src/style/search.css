@@ -8,11 +8,18 @@ label{
     align-content: center;
 }
 .search-header input, .search-header select{
-    width: 50%
+    width: 50%;
+    height: 35px;
+    border: 3px solid black;
+    border-radius: 0;
 }
+
 .search-header button{
-    height: 25px;
-    padding-top: 0;
+    height: 35px;
+    border: 3px solid black;
+}
+.search-header button:hover{
+    background-color: lightblue;
 }
 @media (min-width: 620px){
     .search-header{
@@ -21,19 +28,30 @@ label{
         align-content: center;
     }
     .search-header button{
-        height: 25px;
-        padding-top: 0;
+        height: 35px;
+        border: 3px solid black;
     }
+
 }
 
 
 /*----END HEADER---*/
 
 .search-home{
+    border: 1px solid green;
     min-height: 400px;
     display: grid;
     justify-content: center;
     align-content: center;
+}
+.search-home select{
+    height: 25px;
+}
+.search-home button{
+    width: 100%;
+}
+.search-home button:hover{
+    background-color: lightblue;
 }
 @media (min-width: 768px){
     .search-home fieldset{
@@ -45,16 +63,18 @@ label{
         align-self: center;
     }
     .search-home select{
+        height: 25px;
         display: inline-block;
         width: 100px;
         align-self: center;
     }
     .search-home button{
-        justify-self: center;
-        width: 100px;
+        /*justify-self: center;*/
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 400px;
     }
 
 
 }
-
 

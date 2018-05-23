@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import {Image} from 'react-bootstrap'
 import {Utils} from '../utils/utils'
+import '../style/radar.css'
 
 export default class Radar extends Component{
   state = {
@@ -23,15 +23,8 @@ export default class Radar extends Component{
 
   render(){
     return(
-        <div className={'radar-image'}>
-          <Image src={this.state.radarUrl}
-                 responsive
-                 rounded
-                 bsStyle={{
-                   width: '100%',
-                   margin: '0',
-                   padding: '0'
-                 }}/>
+        <div className={'radar-image-container'}>
+          <img src={this.state.radarUrl} alt={'radar'}/>
         </div>
     )
   }
