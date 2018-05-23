@@ -30,8 +30,8 @@ export default class Search extends Component {
         'state': this.state.state,
       }
     })
-
     this.updateLocalStorage()
+    window.location.reload()
   }
 
   updateLocalStorage() {
