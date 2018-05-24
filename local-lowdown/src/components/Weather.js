@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import{Image} from 'react-bootstrap'
+// import{Image} from 'react-bootstrap'
 import {Utils} from '../utils/utils'
 import '../style/weather.css'
 
@@ -26,7 +26,7 @@ export default class Weather extends Component {
           return {
              weatherString : dataJson.current_observation.weather,
              weatherIconUrl : dataJson.current_observation.icon_url,
-             temperatureString : dataJson.current_observation.temperature_string,
+             temperatureString : dataJson.current_observation.temperature_string.substring(0, dataJson.current_observation.temperature_string.length - 9),
              windInfo : dataJson.current_observation.wind_string,
           }
         }).then(data => {
@@ -41,7 +41,7 @@ export default class Weather extends Component {
   render() {
     return (
         <div className={'weather-info'}>
-          <div className={'weather-icon'}><Image src={this.state.weatherObject.weatherIconUrl} circle responsive/></div>
+          <div className={'weather-icon'}><img src={this.state.weatherObject.weatherIconUrl} alt={'icon'}/></div>
           <div className={'weather-temp'}><h1>{this.state.weatherObject.temperatureString}</h1></div>
           <div className={'weather-strings'}>
             <ul>

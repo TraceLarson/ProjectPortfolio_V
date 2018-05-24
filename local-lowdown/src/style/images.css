@@ -1,0 +1,25 @@
+.image-grid{
+    margin-left: 1%;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.image-grid div{
+    height: auto;
+    margin-bottom: 10px;
+}
+.image-grid div img{
+    width: 95%;
+    height: auto;
+    box-shadow: 3px 3px 3px darkgrey;
+}
+.image-grid div img:hover{
+    position: absolute;
+    z-index: 3;
+    width: 200px;
+    height: 200px;
+    margin-left: -50px;
+    margin-top: -25px;
+
+}

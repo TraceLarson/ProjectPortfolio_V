@@ -1,0 +1,30 @@
+
+.weather-icon{
+    height: 0;
+}
+.weather-icon img{
+    width: 100px;
+    height: 100px;
+}
+
+.weather-temp{
+    text-align: right;
+}
+.weather-temp h1{
+}
+
+.weather-strings{
+    text-align: left;
+}
+
+.weather-strings ul{
+    padding-top: 5px;
+
+    list-style: none;
+    text-align: left;
+    padding: 0;
+
+}
+.weather-strings ul li{
+    margin-left: 0;
+}

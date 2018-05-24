@@ -7,6 +7,7 @@ import {GoogleApiWrapper} from 'google-maps-react'
 import GoogleMapContainer from '../components/GoogleMapContainer'
 import Weather from '../components/Weather'
 import Radar from '../components/Radar'
+import Images from '../components/Images'
 import ResultsHeader from '../components/ResultsHeader'
 import Footer from '../components/Footer'
 
@@ -28,7 +29,7 @@ class Results extends Component {
               </div>
             </div>
             <div className={'unsplash-images'}>
-              unsplash images will go here
+              <Images />
             </div>
           </div>
           <Footer/>

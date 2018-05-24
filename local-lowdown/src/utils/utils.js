@@ -80,8 +80,10 @@ export class Utils {
     //Gets a random image from unsplash and returns the url.
     // https://api.unsplash.com/photos/random/?count=1&query=dogs&w=200&h=200&orientation=squarish&client_id=e2a508587e823dd93b8031994e2420ed1a539716b750ed67e78b3caa09db950f
     // let applicationID = '24544'
-    let accessKey = 'e2a508587e823dd93b8031994e2420ed1a539716b750ed67e78b3caa09db950f'
+    // let accessKey = 'e2a508587e823dd93b8031994e2420ed1a539716b750ed67e78b3caa09db950f' DOGGYAGE
+    let accessKey = 'bafea18dde91c4a487d9ea1953fbf7e3d8a6120a884ec4c95c9639db31c2749c' //LocalLowdown
     // let secretKey = 'c236d7f56c0603c65226d16da075f5c46e7e7a4dfaffebd8954eb582be414732'
+    // let secretKey = '4b11d48f7d028901996c5a3eb111784f721ece30e674d9e6cd021b08cc1b4767' //LocalLowdown
     let api = 'https://api.unsplash.com/photos/random/?'
     let imageQuery = () => {
       if (query == null)
@@ -110,7 +112,7 @@ export class Utils {
     }
 
     let url = `${api}count=${imageCount()}&query=${imageQuery()}&w=${imageWidth()}&h=${imageHeight()}&orientation=squarish&client_id=${accessKey}`
-    console.log(url)
+    console.log(`UTILS: ${url}`)
 
     return url
 
