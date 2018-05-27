@@ -38,7 +38,6 @@ label{
 /*----END HEADER---*/
 
 .search-home{
-    border: 1px solid green;
     min-height: 400px;
     display: grid;
     justify-content: center;

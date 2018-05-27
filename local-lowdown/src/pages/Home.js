@@ -30,7 +30,6 @@ export default class Home extends Component {
                     <div style={{
                         backgroundImage: `url(${source})`,
                         backgroundSize: 'cover cover no-repeat',
-                        background: `url(${source}) center cover no-repeat`,
                         height: '100vh',
                         display: 'flex',
                         justifyContent: 'center',

@@ -8,6 +8,7 @@
 }
 
 .weather-temp{
+    margin: 5px;
     text-align: right;
 }
 .weather-temp h1{
@@ -18,11 +19,10 @@
 }
 
 .weather-strings ul{
-    padding-top: 5px;
-
+    margin: 5px;
     list-style: none;
     text-align: left;
-    padding: 0;
+    padding: 5px 0 0 0;
 
 }
 .weather-strings ul li{

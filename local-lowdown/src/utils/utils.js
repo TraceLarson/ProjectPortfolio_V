@@ -112,7 +112,7 @@ export class Utils {
     }
 
     let url = `${api}count=${imageCount()}&query=${imageQuery()}&w=${imageWidth()}&h=${imageHeight()}&orientation=squarish&client_id=${accessKey}`
-    console.log(`UTILS: ${url}`)
+    // console.log(`UTILS: ${url}`)
 
     return url
 
@@ -125,7 +125,7 @@ export class Utils {
     if (cityQuery.includes(' ')){
       cityQuery = cityQuery.replace(' ', '_')
     }
-    console.log(cityQuery, stateQuery)
+    // console.log(cityQuery, stateQuery)
 
 
     let api = 'http://api.wunderground.com/api/'
@@ -140,7 +140,7 @@ export class Utils {
       forecast : `${api}${accessKey}${tenDayForecast}`
     }
 
-    console.log(weatherObject.conditions)
+    // console.log(weatherObject.conditions)
     return weatherObject
     //-----------EXAMPLE USAGE-------------------
    /* showWeather = (e) => {

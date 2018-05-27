@@ -30,6 +30,7 @@ class Results extends Component {
             </div>
             <div className={'unsplash-images'}>
               <Images />
+                <p className={'note'}>due to unsplash capabilities, images may not fully reflect search criteria</p>
             </div>
           </div>
           <Footer/>
