@@ -24,12 +24,11 @@ export default class Home extends Component {
                 throw new Error('bad response from Unsplash server')
         }).then(data => {
             let source = data[0].urls.regular
-            let credit = `${data[0].user.name}`
             this.setState({
                 searchHome: (
                     <div style={{
                         backgroundImage: `url(${source})`,
-                        backgroundSize: 'cover cover no-repeat',
+                        backgroundSize: 'cover',
                         height: '100vh',
                         display: 'flex',
                         justifyContent: 'center',
