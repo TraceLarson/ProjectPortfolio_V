@@ -46,9 +46,11 @@ label{
 }
 .search-home select{
     height: 25px;
+    background: #fefefe;
 }
 .search-home button{
     width: 100%;
+    background: #fefefe;
 }
 .search-home button:hover{
     background-color: lightblue;

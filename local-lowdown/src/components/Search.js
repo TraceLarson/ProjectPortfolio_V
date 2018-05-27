@@ -55,7 +55,7 @@ export default class Search extends Component {
             <select id="state-bar"
                     name="state"
                     onChange={this.handleChange}>
-              <option value="none"></option>
+              <option value="none">,State</option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
