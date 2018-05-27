@@ -30,11 +30,16 @@ export default class Home extends Component {
                         backgroundImage: `url(${source})`,
                         backgroundSize: 'cover',
                         height: '100vh',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignContent: 'center',
                     }}>
-                        <Search thisClass={'search-home'}/>
+                        <Header />
+                        <div style={{
+                            height: '100%',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignContent: 'center',
+                        }}>
+                            <Search thisClass={'search-home'}/>
+                        </div>
                     </div>
                 )
             })
@@ -44,7 +49,6 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                <Header />
                 {this.state.searchHome}
                 <Footer />
             </div>

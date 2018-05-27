@@ -1,5 +1,9 @@
-.home-search-container{
+.header-background-div{
+
+    background-size: cover;
     height: 100vh;
+}
+.home-search-container{
     display: flex;
     justify-content: center;
     align-content: center;

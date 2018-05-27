@@ -17,6 +17,7 @@ label{
 .search-header button{
     height: 35px;
     border: 3px solid black;
+    transition: 1s;
 }
 .search-header button:hover{
     background-color: lightblue;
@@ -50,6 +51,7 @@ label{
 .search-home button{
     width: 100%;
     background: #fefefe;
+    transition: 1s;
 }
 .search-home button:hover{
     background-color: lightblue;
