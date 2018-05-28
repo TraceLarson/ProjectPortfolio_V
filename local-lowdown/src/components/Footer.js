@@ -8,13 +8,12 @@ const Footer = () => {
   return (
       <div className={'footer-container'}>
         <Grid>
-          <Col xs={12} sm={8}  smOffset={2} >
+          <Col xs={12} sm={12}  smOffset={2} >
             <Image src={'assets/logo-large.png'} className={'footer-logo'}/>
             <Navigation/>
               <p className={'copyright'}>&copy; larson.media 2018</p>
           </Col>
         </Grid>
-
       </div>
   )
 }

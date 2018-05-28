@@ -1,12 +1,16 @@
 import React from 'react'
 import { Image } from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 import '../style/header.css'
 
 
 const Header = () => {
   return (
       <div className={'header'}>
-        <Image src={'assets/logo-large.png'} className={'header-logo'} responsive />
+        <Link to={'/'}>
+          <Image src={'assets/logo-large.png'}
+                 className={'header-logo'}/>
+        </Link>
       </div>
   )
 }

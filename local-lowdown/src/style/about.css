@@ -1,0 +1,35 @@
+.about-container{
+    height: 100vh;
+    background-size: cover;
+    color: #fefefe;
+    font-weight: lighter;
+}
+.about-container a{
+    color: lightblue;
+}
+.mission-statement{
+    margin-top: 15%;
+}
+.mission-statement, .dev-tools{
+    padding: 2% 10% 5% 10%;
+}
+.mission-statement div, .dev-tools div{
+    background-color: #263238;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px #1b2529;
+    padding: 0 4px 4px 4px;
+    text-align: center;
+
+
+}
+.mission-statement div h1{
+    text-align: center;
+}
+
+.dev-tools div ul{
+    list-style: none;
+    padding: 0;
+}
+.dev-tools div ul h2{
+    text-align: center;
+}
